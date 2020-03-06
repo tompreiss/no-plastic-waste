@@ -1,20 +1,14 @@
 $(document).ready(function () {
-  
       $('.bgimg-1').parallax();
-  
       $('.arrow').smoothScroll();
-      
-      
+           
+      $('#toggle').click(function() {
+        $('#overlay').toggleClass('open');
+      });
 
-      $('#hamburger').click(function () {
-        
-      $(this).toggleClass('open');
-      $('nav').toggleClass('show');
-      
-      
-
-    });
-
+      $('.overlay ul li a').click(function() {
+        $('#overlay').toggleClass('open');
+      });
   });
 
   $(document).ready(function() {
@@ -28,12 +22,9 @@ $(document).ready(function () {
       
     });
 
-
-
     $('#topBtn').click(function(){
       $('html, body').animate({ scrollTop : 0}, 50);
 
     });
-
 });
 
