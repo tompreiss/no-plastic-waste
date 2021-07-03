@@ -27,6 +27,10 @@ body, html {
   z-index: 100;
 }
 
+.columns {
+  height: 60%;
+}
+
 .bgimg-1 {
   background-image: url(media/plastic-pollution3.jpg);
   height: 100vh;
@@ -331,6 +335,10 @@ h1 {
   font-family: 'Varela Round', serif;
 }
 
+.button {
+  float: right;
+}
+
 .button_container {
   position: fixed;
   top: 15px;
@@ -343,21 +351,22 @@ h1 {
 }
 .button_container:hover {
   opacity: 0.7;
+  
 }
 .button_container.active .top {
   transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #FFF;
+  background: #aa1b1b;
 }
 .button_container.active .middle {
   opacity: 0;
-  background: #FFF;
+  background: #aa1b1b;
 }
 .button_container.active .bottom {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FFF;
+  background: #aa1b1b;
 }
 .button_container span {
-  background: #aa1b1b;
+  background: black;
   opacity: 0.85;
   border: none;
   height: 5px;
@@ -394,12 +403,15 @@ h1 {
   opacity: .9;
   visibility: visible;
   height: 100%;
-  z-index: 999999;  
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay.open li {
   animation: fadeInRight .5s ease forwards;
   animation-delay: .35s;
+  
   
 }
 
